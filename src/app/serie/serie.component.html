@@ -1,0 +1,34 @@
+<table class="table" style="width: auto">
+  <caption id="promedio">
+    Seasons Average:
+    <span>
+      {{calcularPromedio()}}
+    </span>
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Channel</th>
+      <th scope="col">Seasons</th>
+    </tr>
+  </thead>
+  <tbody id = "series">
+  <tr *ngFor="let serie of series">
+    <td style = "font-weight: bold;">
+      {{serie.id}}
+  </td>
+  <td style = "color:#547dde;">
+      {{serie.name}}
+  </td>
+  <td>
+      {{serie.channel}}
+  </td>
+  <td>
+      {{serie.seasons}}
+  </td>`
+
+  </tr>
+  </tbody>
+</table>
+
